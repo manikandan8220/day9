@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arr task</title>
+</head>
+<body>
+      <script>
+
+                       // 1.
+
+                            function sd(){
+                            let fruits=["apple","banana","orange"];
+                            fruits.push("mango");
+                            console.log(fruits);
+                            }
+                            sd();
+
+                        // 2. 
+
+                            function sf(){
+                            let fruit =["apple","banana","orange"];
+                            fruit.pop("orange");
+                            console.log(fruit);
+                            }
+                            sf();
+
+                          //3.
+
+                              function sg(){
+                              let frui=["apple","banana","orange"];
+                              frui.unshift("pinapple");
+                              console.log(frui);
+                              }
+                              sg(); 
+
+                         //4.
+                              function sh(){
+                              let fru =["apple","banana","orange"];
+                              fru.shift("apple");
+                              console.log(fru);
+                              }
+                              sh();
+
+                          //5.
+
+                              function sj(){
+                              let fruu=["apple","banana","orange","pinapple"];
+                              console.log(fruu.indexOf("banana"));
+                              }
+                              sj();
+
+                          //6.
+
+                              function sk(){
+                              let fr=["apple","banana","Grapes","mango"];
+                              if(fr.includes("Grapes")){
+                                console.log("grapes is in the array");
+                              }
+
+                              else{
+                                   console.log("grapes is not in the array");
+                              }}
+                              sk();
+                          //7.
+
+                                function sl(){
+                                let fruui=["apple","banana","orange","grapes"];
+                                let shallowcopy=fruui.slice();
+                                console.log(shallowcopy);
+                              }
+                              sl();
+
+                         //8.
+                              function first(){
+                              let fruname=["apple","orange","kewi"];
+                              let fruitname=["pinapple","grapes","banana"];
+                              let res=fruname.concat(fruitname);
+                              console.log(res);
+                              }
+                              first();
+                   
+                         //9.
+                                function sec(){
+                                  let first=["apple","banana","pinapple","orange"];
+                                  let second=first.slice(0,1);
+                                  console.log(second);
+                                }
+                                sec();
+
+                         //10.
+                                function second(){
+                                let firstname=["apple","banana","cherry","banana"];
+                                firstname=firstname.map(fruit=>fruit ==="banana"?"strawberry":fruit);
+                                console.log(firstname);
+                                }
+                                second();
+                       
+                         //11;
+
+                                function three(){
+                                let third=["orange","pinapple","mango","apple","strawberry"];
+                                third.reverse();
+                                console.log(third);
+                                }
+
+                          //12.
+
+                                function five(){
+                                let num=[2,5,8,6,3,8,1];
+                                num.sort();
+                                console.log(num);
+                                }
+                                five();
+
+                          //13.
+
+                                function name(){
+                                const f_name=["orange","mango","apple","pinapple"];
+                                const uppercase=f_name.map(fruit=>fruit.toUpperCase());
+                                console.log(uppercase);
+                                }
+                                name();
+
+                          //14.
+
+                                function named(){
+                                const name=["mango","kewi","orange","apple","pinapple","cherry"];
+                                const fruitwith=name.filter(fruit=>fruit.includes('a'));
+                                console.log(fruitwith);
+                                }
+                                named();
+
+                          //15.
+
+                                function l_name(){
+                                const fruitee=["mango","cherry","banana","pinapple","orange"];
+                                fruitee.forEach(fruit=>{
+                                console.log(fruitee);
+                                });
+                              }
+                              l_name();
+                         
+                           //16.
+
+                              function m_name(){
+                              const fruited=["mango","banana","orange","apple","cherry"];
+                              const allfruit=fruited.every(fruit=>fruit.length>3);
+                              console.log(allfruit);
+                               }
+                              m_name();
+
+                           //17.
+
+                              function mani(){
+                              const fruitnames=["mango","banana","orange","apple","cherry"];
+                              const res=fruitnames.find(fruit=>fruit.startsWith("o"));
+                              console.log(res);
+                              }
+                              mani();
+
+                            //18.
+
+                              function names(){
+                              const fruitedd=['mango','banana','orange','apple',];
+                              const result=fruitedd.join(' , ');
+                              console.log(result);
+                              }
+                              names();
+
+                            // 19.
+
+                              function callback(){
+                              const frutt=["mango","banana","orange","apple","cherry"];
+                              frutt.splice(1,1);
+                              console.log(frutt);
+                              }
+                              callback();
+
+                            // 20.
+
+                                function flat(){
+                                const fruitnamedfor=["apple",["banana","orange"],"grapes"];
+                                const results=fruitnamedfor.flat();
+                                console.log(results);
+                                }
+                                flat();    
+    </script> 
+</body>
+</html>
